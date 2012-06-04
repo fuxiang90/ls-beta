@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1338799913 source:/home/fuxiang/gcccode/ls-beta/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<locale.h>
+	<unistd.h>
+	"ls.h"
+
+1338801542 /home/fuxiang/gcccode/ls-beta/ls.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<sys/stat.h>
+	<sys/types.h>
+	<stddef.h>
+	<locale.h>
+	<dirent.h>
+	<time.h>
+	<utime.h>
+	<pwd.h>
+	<grp.h>
+
