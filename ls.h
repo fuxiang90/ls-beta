@@ -154,7 +154,7 @@ int PrintFile(char * dirname)
 
     }
     /*只打印文件名*/
-    else  if(flagno == 1)
+    else // if(flagno == 1)
     {
         for(i = 0 ; i < filecount ; i ++)
             if(flagall == 1 || (filenametable[i].filename[0] != '.'))
@@ -162,13 +162,13 @@ int PrintFile(char * dirname)
 
         printf("\n");
     }
-     else if (flagno == 0)
-        {
-
-            for(i = 0 ; i < filecount ; i ++)
-                printf("%s\t",filenametable[i].filename);
-            printf("\n");
-        }
+//     else if (flagno == 0)
+//        {
+//
+//            for(i = 0 ; i < filecount ; i ++)
+//                printf("%s\t",filenametable[i].filename);
+//            printf("\n");
+//        }
 
 
     return 0;

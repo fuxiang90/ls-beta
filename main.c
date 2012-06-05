@@ -24,20 +24,18 @@ int main(int argc,   char *argv[])
 
 	opt = 0;
 
-	//while(1)
+	while( (opt = getopt(argc,argv,"la") ) != -1)
 	{
-		opt = getopt(argc,argv,"la");
 		switch(opt)
 		{
 			case 'l':flaglist = 1; break;
 			case 'a':flagall = 1;  break;
 			default :
-                flagno = 1; break;
+                 break;
 		}
-        //flaglist = 1;
-		PrintFile(currentfilename);
-		//break;
+
 	}
+	PrintFile(currentfilename);
 
 	return 0;
 }
