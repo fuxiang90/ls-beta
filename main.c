@@ -24,7 +24,7 @@ int main(int argc,   char *argv[])
 
 	opt = 0;
 
-	while(1)
+	//while(1)
 	{
 		opt = getopt(argc,argv,"la");
 		switch(opt)
@@ -34,8 +34,9 @@ int main(int argc,   char *argv[])
 			default :
                 flagno = 1; break;
 		}
+        //flaglist = 1;
 		PrintFile(currentfilename);
-		break;
+		//break;
 	}
 
 	return 0;

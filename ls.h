@@ -134,23 +134,9 @@ int PrintFile(char * dirname)
 
     qsort(filenametable,filecount,sizeof(struct filenode),cmp);
 
-    /*只打印文件名*/
-    if(flagno == 1)
-    {
-        for(i = 0 ; i < filecount ; i ++)
-            if(flagall == 1 || (filenametable[i].filename[0] != '.'))
-                printf("%s\t",filenametable[i].filename);
 
-        printf("\n");
-    }
-    else if (flagno == 0)
-    {
 
-        for(i = 0 ; i < filecount ; i ++)
-                printf("%s\t",filenametable[i].filename);
-        printf("\n");
-    }
-    else if(flaglist == 1)
+    if(flaglist == 1)
     {
 
         for(i = 0 ; i < filecount ; i ++)
@@ -167,6 +153,22 @@ int PrintFile(char * dirname)
         }
 
     }
+    /*只打印文件名*/
+    else  if(flagno == 1)
+    {
+        for(i = 0 ; i < filecount ; i ++)
+            if(flagall == 1 || (filenametable[i].filename[0] != '.'))
+                printf("%s\t",filenametable[i].filename);
+
+        printf("\n");
+    }
+     else if (flagno == 0)
+        {
+
+            for(i = 0 ; i < filecount ; i ++)
+                printf("%s\t",filenametable[i].filename);
+            printf("\n");
+        }
 
 
     return 0;
