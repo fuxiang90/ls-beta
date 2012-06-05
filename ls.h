@@ -128,7 +128,7 @@ int GetFileName(char * dirname ,struct filenode  filenametable[] )
 
 int PrintFile(char * dirname)
 {
-    struct filenode filenametable[30];
+    struct filenode filenametable[256];
     int i = 0,j = 0;
     int filecount = GetFileName(dirname,filenametable);
 
